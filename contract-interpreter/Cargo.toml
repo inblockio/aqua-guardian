@@ -1,0 +1,17 @@
+[package]
+name = "contract-interpreter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+guardian-common.workspace = true
+verifier.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+ethaddr.workspace = true
+hex-literal = "0.4.1"
+aho-corasick = "1.1.3"
+lazy_static = "1.4.0"
+rustls-webpki = "0.102.4"
+base64 = "0.22.1"

@@ -1,0 +1,34 @@
+{
+    "genesis_hash": "96a14331cfb663cc78348a4ab79daf961024e9356a797751eda790958bb29098eef244d98be1201b36f4be2108048cfaeeaef0a85853848ec18b45329150c2cc",
+    "domain_id": "95c0b8ce7a",
+    "latest_verification_hash": "96a14331cfb663cc78348a4ab79daf961024e9356a797751eda790958bb29098eef244d98be1201b36f4be2108048cfaeeaef0a85853848ec18b45329150c2cc",
+    "title": "Simple_test",
+    "namespace": 0,
+    "chain_height": 1,
+    "revisions": {
+        "96a14331cfb663cc78348a4ab79daf961024e9356a797751eda790958bb29098eef244d98be1201b36f4be2108048cfaeeaef0a85853848ec18b45329150c2cc": {
+            "verification_context": {
+                "has_previous_signature": false,
+                "has_previous_witness": false
+            },
+            "content": {
+                "rev_id": 30,
+                "content": {
+                    "main": "simple test",
+                    "transclusion-hashes": ""
+                },
+                "content_hash": "e384f13b79745c8005166a99d759a26ee2313d238fcc481e19ed41796659861266fe35c14e61f3c00ffd7ad9c4fb7a725634f311f8c4bea67591f943216b9cac"
+            },
+            "metadata": {
+                "domain_id": "95c0b8ce7a",
+                "time_stamp": "20240530134019",
+                "previous_verification_hash": "",
+                "metadata_hash": "b8dd68d8b796527b9d72673495d1d7ade5e1620e6e09a12fd77752684926631b8fd239b7e775fece5598449320d978fa50a9dea65240e65b8e7cfaf9b98b8689",
+                "verification_hash": "96a14331cfb663cc78348a4ab79daf961024e9356a797751eda790958bb29098eef244d98be1201b36f4be2108048cfaeeaef0a85853848ec18b45329150c2cc"
+            },
+            "signature": null,
+            "witness": null
+        }
+    },
+    "site_info": {}
+}

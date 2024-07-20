@@ -1,0 +1,82 @@
+[workspace]
+members = [
+    "contract-interpreter",
+    "guardian-api",
+    "guardian-common",
+    "pkc-api",
+    "siwe-oidc-auth",
+    "verifier",
+    # "node-eth-lookup",
+]
+resolver = "2"
+
+[workspace.dependencies]
+guardian-common = { path = "guardian-common" }
+verifier = { path = "verifier" }
+contract-interpreter = { path = "contract-interpreter" }
+# node-eth-lookup = { path = "node-eth-lookup" }
+guardian-api = { path = "guardian-api" }
+siwe-oidc-auth = { version = "0.1.0", path = "siwe-oidc-auth" }
+pkc-api = { path = "pkc-api" }
+
+sha3 = "0.10.8"
+ethaddr = { version = "0.2.2", features = ["sha3", "serde"] }
+libsecp256k1 = "0.7.1"
+rustls-webpki = "0.102.4"
+flagset = "0.4.5"
+rcgen = "0.13.1"
+rustls = { version = "0.23.8", default-features = false, features = ["ring", "std"] }
+
+
+thiserror = "1.0.61"
+rand = "0.8.5"
+hex = "0.4.3"
+chrono = "0.4.38"
+url = "2.5.0"
+reqwest = { version = "0.12.3", default-features = false, features = [
+    "cookies",
+    "json",
+    "rustls-tls",
+] }
+serde = { version = "1.0.202", features = ["derive"] }
+serde_json = "1.0.117"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3.30"
+
+[package]
+name = "guardian"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+guardian-common.workspace = true
+verifier.workspace = true
+contract-interpreter.workspace = true
+pkc-api.workspace = true
+# node-eth-lookup.workspace = true
+guardian-api.workspace = true
+
+clap = { version = "4.5.4", features = ["derive"] }
+rustls-webpki.workspace = true
+reqwest.workspace = true
+tokio.workspace = true
+serde_json.workspace = true
+siwe-oidc-auth.workspace = true
+hex.workspace = true
+url.workspace = true
+futures.workspace = true
+chrono.workspace = true
+libsecp256k1.workspace = true
+ethaddr.workspace = true
+flagset.workspace = true
+rcgen.workspace = true
+dotenv = "0.15.0"
+dashmap = "5.5.3"
+weak-table = "0.3.2"
+parking_lot = "0.12.3"
+serde.workspace = true
+thiserror.workspace = true
+rustls.workspace = true
+rustls-pemfile = "2.1.2"
+crossbeam = { version = "0.8.4", features = ["crossbeam-channel"] }
+openssl = "0.10"

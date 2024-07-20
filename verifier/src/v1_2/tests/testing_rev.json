@@ -1,0 +1,15 @@
+{
+    "verification_hash": "750671012c0afa8c5ea113391f48a28bfcb321baba40d0701c6b320eb2833e6eaf07998a39b6f4a2647cf061c0d17c2bb693ada9a1cd33b0b2b6896b846ff98f",
+    "content": {
+        "content": {
+            "main": "Never gonna give you up\n\nNever gonna let you down\n\nNever gonna run around and desert you\n\nNever gonna make you cry\n\nNever gonna say goodbye\n\nNever gonna tell a lie and hurt you",
+            "transclusion-hashes": ""
+        },
+        "content_hash": "cefce5af7ff408e6dd0d0aa86f4a6a56a49b9c0157e46ee7a72f130eb8cf32e635c7998e2ff23f35a63c0e2105a7034deacbc0951f81db200d674ade2ad84383"
+    },
+    "metadata": {
+        "domain_id": "b6002801fc",
+        "timestamp": "20240601111834",
+        "metadata_hash": "c6a0120826357109be73789fc8e132537841e2b3e49a9ad32e67fabd025c7a9a242615ebf7f7dd7ac7283e65332dac9a253cc546b25b94f2119d6f3abe741bd0"
+    }
+}

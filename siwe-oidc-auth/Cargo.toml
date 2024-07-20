@@ -1,0 +1,20 @@
+[package]
+name = "siwe-oidc-auth"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+guardian-common.workspace = true
+reqwest.workspace = true
+libsecp256k1.workspace = true
+chrono.workspace = true
+serde.workspace = true
+reqwest_cookie_store = { version = "0.8.0", features = ["serde"] }
+serde_json.workspace = true
+cookie_store = "0.21.0"
+ethaddr.workspace = true
+hex.workspace = true
+uri_encode = "1.0.2"
+dotenv = "0.15.0"
+tokio.workspace = true
+

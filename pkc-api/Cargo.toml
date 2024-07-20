@@ -1,0 +1,18 @@
+[package]
+name = "pkc-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+guardian-common.workspace = true
+reqwest.workspace = true
+base64 = "0.22.0"
+sha3 = "0.10.8"
+hex = "0.4.3"
+libsecp256k1 = "0.7.1"
+chrono = "0.4.38"
+serde_json.workspace = true
+serde = { version = "1.0.202", features = ["derive"] }
+thiserror.workspace = true
+futures = "0.3.30"
+tokio = { version = "1.37.0", features = ["full"] }

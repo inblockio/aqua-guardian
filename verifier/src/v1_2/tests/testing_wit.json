@@ -1,0 +1,76 @@
+{
+    "verification_hash": "0a405443638bedf1c4c7309580e0af9540b4b664640488bcb6d8ab2743d56d6a70f060a38fee55d7c46290fe26278d62ea04d1a397b2efcd037dc4e8a86cc196",
+    "content": {
+        "rev_id": 24,
+        "content": {
+            "main": "revision 2",
+            "signature-slot": "[\n    {\n        \"user\": \"0x13Ddb9f9dEDE0903Ed6F40D4FB273632d19CaED1\",\n        \"timestamp\": \"20240530132934\"\n    }\n]",
+            "transclusion-hashes": ""
+        },
+        "content_hash": "b3b38568dce5024526a9ee13b284e38b6c379b8733d16635c01aa7416f0a9c2ce2511dfa4aa9e72e2b6b741755e32c1c701034a5074df30e91ff0408ae292745"
+    },
+    "metadata": {
+        "domain_id": "95c0b8ce7a",
+        "timestamp": "20240530132934",
+        "previous_verification_hash": "3d3b14477d8c9a074c6d9de00bcd6d72d8e7950eedc68928786b22954f2eea7de61648631a7a5202fc239d86935d498580d76da6b66b7fc2c11866fe8b5ae97a",
+        "metadata_hash": "ad12cfc25bd9b41d597d2f32a832b1a1d63b02255dbb5b48521cfaf8a032b8e4d8af495e8f394a8a26e94ac223527070599e19fa368360c7f6b4931ec8c474a7"
+    },
+    "signature": {
+        "signature": "0xa68c116ba1bc92b28b17601c54d87512e731a746e16a587119b1920cd6a934453c051e1741e557c8444f984c3110fed40f5d92cb2d4e3f24aa7f984de9eea1dc1b",
+        "public_key": "0x04c046b45dcdf95dc481f44635614a938a8197274702d94f33e8ee472f49f4090c37c9228010f74877914aafc6b3afaef46ce0cdc1cf8ce63744e1ac5f3dba33f8",
+        "wallet_address": "0x13Ddb9f9dEDE0903Ed6F40D4FB273632d19CaED1",
+        "signature_hash": "411a6eef62cf2f2791effb923d098df3a4ad9300d1be55af11d6b562ea6ca526d264b0d09f7b8e7d9dd14708497213a10c475930e83226259dc12456d36fc5c7"
+    },
+    "witness": {
+        "witness_event_id": 1,
+        "domain_id": "95c0b8ce7a",
+        "domain_snapshot_title": "Data Accounting:DomainSnapshot:3a25c175528a9e8096ae5e6ec7437d9e23df79cbb4e8a70257a18aadf302b2132d6b172ffe2630f07c5e9caffad90b005acf96aad500e7326423c30430ec74ce",
+        "witness_hash": "be7b7596c571af2617a460722583bd77df0142f4479b349e16f1ce5070cbad504e05e70c839876cd00a5911fd4c5035c4dad84b56ec1744ad4311eaf8aa716bc",
+        "domain_snapshot_genesis_hash": "3a25c175528a9e8096ae5e6ec7437d9e23df79cbb4e8a70257a18aadf302b2132d6b172ffe2630f07c5e9caffad90b005acf96aad500e7326423c30430ec74ce",
+        "merkle_root": "6dd43cfc7346d3c629097f3b677dfbc12b6d9f84c7a96d5ebf24c84bff9828ca91c8091178b7954e7a689acec88c80e28ae147f9620e2c9f41b64316eab27e0b",
+        "witness_event_verification_hash": "59d301aae0c6cbd071a1f1ed8b122e196d06c363c54d1dadf0794d2cd55b1dfd5a5698d60c7922441110328b556899625af1d3f1532c20dd88ad9296992aa667",
+        "witness_network": "sepolia",
+        "smart_contract_address": "0x45f59310ADD88E6d23ca58A0Fa7A55BEE6d2a611",
+        "witness_event_transaction_hash": "0x0adcf5fd699f7a6d35e1c7c3b34c8cb120c088e2545ec513bda55e2487d89bd2",
+        "sender_account_address": "0x13ddb9f9dede0903ed6f40d4fb273632d19caed1",
+        "source": "default",
+        "structured_merkle_proof": [
+            {
+                "witness_event_verification_hash": "59d301aae0c6cbd071a1f1ed8b122e196d06c363c54d1dadf0794d2cd55b1dfd5a5698d60c7922441110328b556899625af1d3f1532c20dd88ad9296992aa667",
+                "depth": 3,
+                "left_leaf": "6ba2a29d49af0857221ad762463c5cf6997176f1d3e0b78f3ee8b5e3803b56ca16a0cf1e04b8653f96de909e97dde3c506160ba83f555c2e65a5cbbe5c65c90b",
+                "right_leaf": "0a405443638bedf1c4c7309580e0af9540b4b664640488bcb6d8ab2743d56d6a70f060a38fee55d7c46290fe26278d62ea04d1a397b2efcd037dc4e8a86cc196",
+                "successor": "5acc6e7a6367b415ee32d60f10950a722f8db134a676965b1e5117a0d037993402d02a80f2920f9629dc13e0db79ea0547cfb3675be48b7aa406cf86a08c0a51",
+                "id": 0,
+                "witness_event_id": 0
+            },
+            {
+                "witness_event_verification_hash": "59d301aae0c6cbd071a1f1ed8b122e196d06c363c54d1dadf0794d2cd55b1dfd5a5698d60c7922441110328b556899625af1d3f1532c20dd88ad9296992aa667",
+                "depth": 2,
+                "left_leaf": "65c017643d759cb6401a11a1ccfc81615e4188540d288ec129c6803ee9c88967095ffbf17fea6b52d7d27c7de75d5cda3b590911450bb21d513de43edaafb20b",
+                "right_leaf": "5acc6e7a6367b415ee32d60f10950a722f8db134a676965b1e5117a0d037993402d02a80f2920f9629dc13e0db79ea0547cfb3675be48b7aa406cf86a08c0a51",
+                "successor": "b94cbeee41af669db83161b43c408af096bddedc2b12b326b76b0cc3b5c314c1dbc9beac7bad44ad443d51de2113c12f01e411fa33410f4d42a565f5b240ea85",
+                "id": 0,
+                "witness_event_id": 0
+            },
+            {
+                "witness_event_verification_hash": "59d301aae0c6cbd071a1f1ed8b122e196d06c363c54d1dadf0794d2cd55b1dfd5a5698d60c7922441110328b556899625af1d3f1532c20dd88ad9296992aa667",
+                "depth": 1,
+                "left_leaf": "b94cbeee41af669db83161b43c408af096bddedc2b12b326b76b0cc3b5c314c1dbc9beac7bad44ad443d51de2113c12f01e411fa33410f4d42a565f5b240ea85",
+                "right_leaf": "b26ff86a880a1804797881b4addfc26d287bfac81022e06b69973f4d106e6ff319b969ccfdfc8e6188cd87e4bb7143981d1e76f142ad1c3d68501446b076e9e3",
+                "successor": "45ea58b566b92c020f8df3feb2fff399983319540b32e8ea77840df8d30743d21974725a336de3662678da98df4bc036c7bf281fb97c1db7944973a7af75a7d5",
+                "id": 0,
+                "witness_event_id": 0
+            },
+            {
+                "witness_event_verification_hash": "59d301aae0c6cbd071a1f1ed8b122e196d06c363c54d1dadf0794d2cd55b1dfd5a5698d60c7922441110328b556899625af1d3f1532c20dd88ad9296992aa667",
+                "depth": 0,
+                "left_leaf": "45ea58b566b92c020f8df3feb2fff399983319540b32e8ea77840df8d30743d21974725a336de3662678da98df4bc036c7bf281fb97c1db7944973a7af75a7d5",
+                "right_leaf": "28b6eca63f1ca96793012b52a8396d96d0c3e1848b1c0b8082b712cb102b673f92b1ac3561db6d00817b39e9e0aad9e72923983809c1eab8a1a2fc3b8fe2217f",
+                "successor": "6dd43cfc7346d3c629097f3b677dfbc12b6d9f84c7a96d5ebf24c84bff9828ca91c8091178b7954e7a689acec88c80e28ae147f9620e2c9f41b64316eab27e0b",
+                "id": 0,
+                "witness_event_id": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "context": {
+        "genesis_hash": "041754bbf542b636b58b98a2ef71cba81fa102a3064d5a6a2612edd3900713863a1b0dd13d902f9cf9a41418f596eb7e0a8244a8ed5d7293aa67e8ac534a7cf9",
+        "domain_id": "fa72accacb",
+        "latest_verification_hash": "041754bbf542b636b58b98a2ef71cba81fa102a3064d5a6a2612edd3900713863a1b0dd13d902f9cf9a41418f596eb7e0a8244a8ed5d7293aa67e8ac534a7cf9",
+        "title": "Test_import",
+        "namespace": 0,
+        "chain_height": 1,
+        "site_info": {
+            "sitename": "Personal Knowledge Container",
+            "dbname": "my_wiki",
+            "base": "http:\/\/localhost:9352\/index.php\/Main_Page",
+            "generator": "MediaWiki 1.39.4",
+            "case": "first-letter",
+            "namespaces": {
+                "0": {
+                    "case": true,
+                    "title": ""
+                }
+            },
+            "version": "0.3.0"
+        }
+    },
+    "revision": {
+        "verification_context": {
+            "has_previous_signature": false,
+            "has_previous_witness": false
+        },
+        "content": {
+            "rev_id": 26,
+            "content": {
+                "main": "test import",
+                "transclusion-hashes": ""
+            },
+            "content_hash": "49024f0c0a1c04fa2813cd11696194aae779dfc2fdea1116bb7e84ed705fe783aa79418db3540073529305950f4b719acfc50a9ebc37c0466f023eccdf2f2c51"
+        },
+        "metadata": {
+            "domain_id": "fa72accacb",
+            "time_stamp": "20240602204302",
+            "previous_verification_hash": "",
+            "metadata_hash": "17e86e96c713f2717adc651d110e9d5f55699fab8f86e1b400174957e6481e83db2380e70bed41d5d4727d65a25ccd693dc325ec2057196950b76622e03df6af",
+            "verification_hash": "041754bbf542b636b58b98a2ef71cba81fa102a3064d5a6a2612edd3900713863a1b0dd13d902f9cf9a41418f596eb7e0a8244a8ed5d7293aa67e8ac534a7cf9"
+        },
+        "signature": null,
+        "witness": null
+    }
+}

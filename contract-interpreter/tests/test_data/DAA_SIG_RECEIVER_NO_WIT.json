@@ -1,0 +1,30 @@
+{
+    "verification_context": {
+        "has_previous_signature": true,
+        "has_previous_witness": false
+    },
+    "content": {
+        "rev_id": 20,
+        "content": {
+            "main": "{{DataAccessAgreement\n|sender=0x95b4b2e6d579eb9D8c32B34f8ca6ab11a3849c06\n|receiver=0xd0fFc39Fb1968864E386b888D2b1e4e34fF65393\n|pages=Test page to be shared\n|terms=JUST TAKE IT\n}}",
+            "signature-slot": "[\n    {\n        \"user\": \"0x95b4b2e6d579eb9D8c32B34f8ca6ab11a3849c06\",\n        \"timestamp\": \"20240704094602\"\n    }\n]",
+            "transclusion-hashes": "[{\"dbkey\":\"DataAccessAgreement\",\"ns\":10,\"verification_hash\":\"725c2b99a955a690e50a1f22f356a64b02c144dd5adcbc09ac09f861fe2cc45a47185d7a9f5ecc60af86c0e60545aabe8c8c9c34feff92ea1da511ec0e2ef2ac\"},{\"dbkey\":\"Test_page_to_be_shared\",\"ns\":0,\"verification_hash\":\"0e6ebc7777453d2cf0246afab5433da2aea180c66b9f4e3cd78da6403d559387967babb87c312ec8ccefe907cb383a2aefd23062ead35cb2044daf35e82a5f43\"}]"
+        },
+        "content_hash": "7fba4b580c62b2d37da363dfe359b46244f04924e2f3c05e3ed6f945505c9ab21735daa5548e67e3af360b1dae010029122990ae6bb0bbfbf01943704bc550c1"
+    },
+    "metadata": {
+        "domain_id": "7c463f5324",
+        "time_stamp": "20240704094602",
+        "previous_verification_hash": "6d23d1c12c976fc969bb5ada4132d1bcb778829ee727dae9d784ca2d47165d66b1f03a1251050d033237c6c3f73c73a69991be08cd1546a397e6ecce45d9b205",
+        "merge_hash": "",
+        "metadata_hash": "6058825665886b2adfcbf0bfaac31d6c7d2b80b8912066c546ead25a2dc1374e454987fccc27afffca01e1694d1794c36ba5034d49afb087a8277cfd5538a4c3",
+        "verification_hash": "fb3360f4699841ddc7598a4b4e173d9f11ead0ae2e40b09dec958a9168aafe2088db10bb93709a734a867b60d47811a7f579bdc6c8d843e9188939cd0d23fea4"
+    },
+    "signature": {
+        "signature": "0x5a0a0549cb8c2ab9f339767346a84193baa55705ec0dd96c51756dff7047374e2be751c3fa583ddffb248a8fb483041af427c9bf48b621c44842a8d5784654191b",
+        "public_key": "0x04062274ed5bba92b9ab6b8687a86d87066d3dbac83e4f7e0e996a4d163e1bb294a75d8bbef8c9b2425bf7c020c7fe298580bc37fe8562227cb50e574dabb79701",
+        "wallet_address": "0xd0fFc39Fb1968864E386b888D2b1e4e34fF65393",
+        "signature_hash": "5e118dd1635552064612a5f064d094421461d511d8e355bb0ce52ff961ab97fac8b7ab0e30164069cc856d720c8eb8bf9a9073b520c747c55e8605f661533a0c"
+    },
+    "witness": null
+}
