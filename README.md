@@ -1,9 +1,9 @@
-# aqua-docker-guardian
+# aqua-guardian
 
 ## Building/Running
 
 ```sh
-cargo build
+cargo build --bin guardian
 ```
 
 ### Dependencies
@@ -14,4 +14,5 @@ cargo build
 
 `Cargo.toml` - workspace specification
 `guardian` - final executable
+`.env` - configure ip address, wallet addresss, infura API-Key etc.
 (+add crates using `cargo new --lib <crate_name>`)
