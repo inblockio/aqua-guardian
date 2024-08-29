@@ -1,4 +1,4 @@
-#![deny(warnings)]
+//#![deny(warnings)]
 
 //! # Aqua Guardian
 //!
@@ -7,6 +7,7 @@
 //! It is part of the [aqua project](https://aqua-protocol.org/).
 //!
 
+pub mod sa;
 pub mod v1_1;
 pub mod v1_2;
 

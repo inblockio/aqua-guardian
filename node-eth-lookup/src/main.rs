@@ -1,5 +1,5 @@
-use node_eth_lookup::{constants::UrlProvider, providers::get_tx_data};
 use eyre::Result;
+use node_eth_lookup::{constants::UrlProvider, providers::get_tx_data};
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -18,7 +18,7 @@ async fn main() -> Result<()> {
     // )
     // .await;
 
-        // Mainnet
+    // Mainnet
     // let result = get_tx_data(
     //     0x1,
     //     "0x9d4897d3e381982ee872cb193469d991cce8d087f0cd5fe275926f80c1326a1e",

@@ -6,7 +6,7 @@ members = [
     "pkc-api",
     "siwe-oidc-auth",
     "verifier",
-    # "node-eth-lookup",
+    #"node-eth-lookup",
 ]
 resolver = "2"
 
@@ -47,6 +47,10 @@ futures = "0.3.30"
 name = "guardian"
 version = "0.1.0"
 edition = "2021"
+
+[[bin]]
+name="verifier"
+path="verifier/src/bin.rs"
 
 [dependencies]
 guardian-common.workspace = true

@@ -20,7 +20,7 @@ import! {
     tx_hash::TxHash;
     namespace::Namespace;
     branch::Branch;
-
+    page_data::{PageData, HashChain};
     // composite types
     revision::{Revision, RevisionContent, FileContent, RevisionMetadata, ExportRevisionMetadata, RevisionSignature, RevisionWitness};
 }
