@@ -20,7 +20,7 @@ async fn main() -> Result<(), ()> {
     let rpcpath = match cli.rpc {
         Some(rpcpath) => rpcpath,
         None => {
-            println!("No rpc provided to standalone validator. Use -rpc url to define one");
+            println!("No rpc provided to standalone validator. Use --rpc url to define one");
             println!("Falling back to default open testnet rpc");
             "https://ethereum-sepolia-rpc.publicnode.com".to_string()
         }
@@ -31,7 +31,7 @@ async fn main() -> Result<(), ()> {
     let files = match cli.file {
         Some(files) => files,
         None => {
-            eprintln!("No filepaths provided to standalone validator. Use -file path1..");
+            eprintln!("No filepaths provided to standalone validator. Use --file path1..");
             panic!("Exiting with no files to validate");
         }
     };

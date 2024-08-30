@@ -27,11 +27,6 @@ pub fn revision_integrity(
     rev: &Revision,
     prev: Option<&Revision>,
 ) -> flagset::FlagSet<RevisionIntegrity> {
-    println!("####################################################");
-    println!();
-    println!("####################################################");
-    println!();
-    println!("####################################################");
     let mut integrity = verification::only_verification_hash_integrity(rev, prev);
     integrity |= signature::only_signature_hash_integrity(rev, prev);
     integrity |= witness::only_witness_hash_integrity(rev, prev);

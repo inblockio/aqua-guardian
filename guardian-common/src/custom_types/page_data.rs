@@ -18,7 +18,6 @@ pub struct PageData {
     pub site_info: SiteInfo,
 }
 
-// todo:re move
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct HashChain {
     pub genesis_hash: String,
