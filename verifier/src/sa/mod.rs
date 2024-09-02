@@ -7,7 +7,7 @@ use std::thread;
 pub fn validate(content: String, _rpc: String) {
     let representation_json: PageData = match serde_json::from_str(content.as_str()) {
         Err(why) => {
-            eprintln!("couldn't parse: {}", why);
+            eprintln!("couldn't parse object from json: {}", why);
             return;
         }
         Ok(repr) => repr,
