@@ -42,24 +42,23 @@ async fn main() {
         // Try open the PEM file
         // make new one if not found
         match std::fs::File::open("identity.pem") {
-            Ok(_file) => { 
-            }
+            Ok(_file) => {}
             _ => {
-                    println!("failed to open identity.pem. would you like to generate it? [y/n]");
-                    let mut ans = String::new();
-                    std::io::stdin()
-                        .read_line(&mut ans)
-                        .expect("Failed to read line");
-                    match ans.trim().to_lowercase().starts_with('y') {
-                        true => {
-                            println!("writing privatekey and certificate.");
-                            guardian::certificate_generation::gen_identity();
-                        }
-                        false => {
-                            panic!("aborting guardian setup");
-                        }
+                println!("failed to open identity.pem. would you like to generate it? [y/n]");
+                let mut ans = String::new();
+                std::io::stdin()
+                    .read_line(&mut ans)
+                    .expect("Failed to read line");
+                match ans.trim().to_lowercase().starts_with('y') {
+                    true => {
+                        println!("writing privatekey and certificate.");
+                        guardian::certificate_generation::gen_identity();
+                    }
+                    false => {
+                        panic!("aborting guardian setup");
                     }
                 }
+            }
         }
         let pem_file: std::fs::File = std::fs::File::open("identity.pem").unwrap();
 
@@ -87,7 +86,7 @@ async fn main() {
                 IpAddr::V4(addr) => host_ip = addr.octets().to_vec(),
                 IpAddr::V6(addr) => host_ip = addr.octets().to_vec(),
             };
-            
+
             // check if any of the hostnames correspond to the one in .env
             if let Some(ip) = altname.ipaddress() {
                 if ip == host_ip {
@@ -127,16 +126,17 @@ async fn main() {
     for err in afire.clone().burn(genesi).await {
         eprintln!("error while burning forest: {err}");
     }
-    let Campfire { state, .. } = ::std::sync::Arc::try_unwrap(afire).expect("what?");
+    let Campfire { state, .. } =
+        ::std::sync::Arc::try_unwrap(afire).expect("unexpected error in processing state entity");
 
     eprintln!("{:#?}", &state);
 
     if let Some(user) = state.guardian_servitude(private_key.identity().into()) {
         if user != admin_user {
-            panic!("Servitude INVALID: it was signed by invalid user :(");
+            panic!("Servitude INVALID: signed by invalid user");
         }
 
-        println!("{admin_user} has accepted my servitude :).");
+        println!("{admin_user} has accepted servitude");
     } else {
         println!("Admin has not accepted my request yet, sending a new one. Please sign the Servitude contract in the PKC with the Wallet key used to deploy the PKC (authoritative key = admin).");
 
@@ -221,7 +221,7 @@ async fn main() {
         .iter()
         .map(|cert| webpki::anchor_from_trusted_cert(cert))
         .collect::<Result<Vec<_>, _>>()
-        .expect("i thought i could trust you")
+        .expect("certificate verification failed")
         .into_iter()
         .map(|a| a.to_owned())
         .collect();
@@ -240,7 +240,10 @@ async fn main() {
     let bstate = astate.clone();
 
     let get_handler = move |info: &[webpki::types::CertificateDer<'static>]| {
-        let cert = info.first().expect("shit's broken").to_owned();
+        let cert = info
+            .first()
+            .expect("unexpected error in certificate handler")
+            .to_owned();
         let bstate = bstate.clone();
         async move {
             Handler {
@@ -266,7 +269,7 @@ async fn main() {
             Ok(certta) => {
                 cert_ta = certta.clone();
                 trusted2.change(|ta| {
-                    eprintln!("I am adding your cert");
+                    eprintln!("adding certificate");
                     let mut ta: Vec<webpki::types::TrustAnchor<'static>> = ta.to_vec();
                     ta.push(certta.to_owned());
                     ta.into()
@@ -325,7 +328,7 @@ async fn main() {
                         );
                         if integrity.bits() != 0 {
                             eprintln!(
-                                "they betrayed us!\n[{branch_hash}]: {integrity:?}, {rev:#?}"
+                                "integrity verification failed!\n[{branch_hash}]: {integrity:?}, {rev:#?}"
                             );
                             break 'untrust;
                         }
@@ -459,7 +462,9 @@ impl<S: Clone + Storage + Sync + Send + 'static> Campfire<S> {
 
         let requests = latests.into_iter().map(|latest| async move {
             let mut iter = self.storage.get_branch(latest).await?.hashes.into_iter();
-            let mut next = iter.next().expect("thing broken");
+            let mut next = iter
+                .next()
+                .expect("unexpected error in state forest build iterator");
 
             // insert leaf
             self.forest.entry(next).or_default();

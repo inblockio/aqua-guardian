@@ -127,7 +127,7 @@ impl TryFrom<GenericContractInfo<'_>> for AccessAgreement {
             .split(", ")
             .map(|name| {
                 // Replace of "Media:" to allow correct mapping of transcluded file title to its transclusion hash (MediaWiki limitation)
-                let tmp_name = name.replace(" ", "_").replace("Media:", ""); 
+                let tmp_name = name.replace(" ", "_").replace("Media:", "File:");
                 let name = tmp_name.as_str();
                 transclusions
                     .get(name)
