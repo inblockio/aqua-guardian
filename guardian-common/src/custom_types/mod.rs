@@ -1,3 +1,5 @@
+pub mod page_data;
+
 macro_rules! import {
     ($($data_type:ident :: $t:tt;)*) => {
         $( import!(@impl $data_type $t); )*
