@@ -6,7 +6,7 @@ import! {
     content::{RevisionContent, FileContent};
     metadata::{RevisionMetadata, ExportRevisionMetadata};
     signature::RevisionSignature;
-    witness::RevisionWitness;
+    witness::{RevisionWitness, MerkleNode};
 }
 
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize, Default)]

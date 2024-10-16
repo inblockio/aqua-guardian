@@ -22,7 +22,7 @@ import! {
     branch::Branch;
 
     // composite types
-    revision::{Revision, RevisionContent, FileContent, RevisionMetadata, ExportRevisionMetadata, RevisionSignature, RevisionWitness};
+    revision::{Revision, RevisionContent, FileContent, RevisionMetadata, ExportRevisionMetadata, RevisionSignature, RevisionWitness, MerkleNode};
 }
 
 fn from_hex<const SIZE: usize>(s: &str) -> Option<[u8; SIZE]> {
