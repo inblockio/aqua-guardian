@@ -7,12 +7,14 @@ pub struct RevisionWitness {
     pub merkle_root: Hash,
     pub witness_network: String,
     pub witness_event_transaction_hash: TxHash,
+    pub witness_event_verification_hash: Hash,
     pub witness_hash: Hash,
     pub structured_merkle_proof: Vec<MerkleNode>,
-}
+} 
 
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub struct MerkleNode {
     pub left_leaf: Hash,
     pub right_leaf: Hash,
+    pub successor: Hash,
 }
